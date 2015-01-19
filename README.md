@@ -12,12 +12,12 @@ To use this tool, create an add the desired .yaml files to the yaml file directo
 Once .yaml files have been added to the yamlfile directory, you will need to call the driver.sh command passing in the following options.
 note: do not escape special characters when passing arguments to the driver.sh"
 required options are
--d [nodes] ex. "123.12.1.1,123.12.1.2"
--o [ops] ex. "ops(insert=1)"
+-d <nodes> ex. "123.12.1.1,123.12.1.2"
+-o <ops> ex. "ops(insert=1)"
 
 optional options are
--r [rate] (optional) ex. "-rate threads>=1 threads<=2"
--n [number of ops] (optional) ex. "n=1000"
+-r <rate> (optional) ex. "-rate threads>=1 threads<=2"
+-n <number of ops> (optional) ex. "n=1000"
 
 These options are based on the Cassandra 2.1 stress options.
 note: the stress driver tool currently only supports a subset of the Cassandra 2.1 stress options.
